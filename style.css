@@ -1,0 +1,156 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    padding: 10px;
+    background: rgb(184, 184, 184);
+  }
+  
+  /* Estilos para desktop */
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    padding-top: 70px; /* ajuste conforme a altura do seu h1 */
+    margin-top: 50px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    color: white;
+    margin-bottom: 20px;
+    color: greenyellow;
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+  }
+  
+  input {
+    flex: 1;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+    margin-left: 10px;
+  }
+  
+  input:focus,
+  label:focus {
+    outline: none;
+  }
+  
+  button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    border: solid white 1px;
+  }
+  
+  .receita,
+  .despesa,
+  .saldo {
+    background-color: rgb(17, 17, 17);
+    margin-top: 1px;
+    color: white;
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .receita {
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  .saldo {
+    border-radius: 0px 0px 5px 5px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  p {
+    background-color: white;
+    color: gray;
+    width: 60%;
+    max-width: 100px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: -15px;
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      margin: 0;
+      padding: 0;
+    }
+
+  
+    .form-group button {
+        padding: 10px;
+        cursor: pointer;
+        background-color: blue;
+        border-radius: 5px;
+        color: white;
+        border: solid white 1px;
+        text-align: center; /* Adicionado para centralizar o botão */
+      }
+       
+
+  
+    label {
+      width: 100%;
+      font-size: 18px;
+      margin-bottom: 5px;
+    
+    }
+  
+    input {
+      width: 60%;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  
+    button {
+      width: 30%;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  
+  
